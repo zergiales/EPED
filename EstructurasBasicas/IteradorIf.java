@@ -2,15 +2,18 @@ package EstructurasBasicas;
 //Iterador de elementos
 public interface IteradorIf<E> {
 	/*
-	 * Obtiene el siguiente elemento de la iteracciÛn
-	 * @Pre: hasNext()
-	 * @return: el siguiente elemento de la iteracciÛn
+	 * Obtiene el siguiente elemento de la iteracci√≥n
+	 * @Pre: hasNext() --> precondicion es que todavia existan elementos iterables
+	 * @return: el siguiente elemento de la iteracci√≥n
+	 * 
+	 *  - valor de tipo E 
+	 *  - antes de get Next , habr√±a que comprobar si es ture el valor de hasNext()
 	 */
 	public E getNext();
 	
 	/*
-	 * Comprueba si a˙n quedan elementos por iterar
-	 * @return true si el iterador dispone de m·s elementos.
+	 * Comprueba si a√∫n quedan elementos por iterar
+	 * @return true si el iterador dispone de m√°s elementos.
 	 */
 	public boolean hasNext();
 	
