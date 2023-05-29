@@ -1,11 +1,11 @@
 package EstructurasBasicas;
 /**
  * INTERFACE DE COLECCION
- * Representa una coleccion de elementos, sin ningún tipo de relacion
+ * Representa una coleccion de elementos, sin ningÃºn tipo de relacion
  * entre ellos.Solo la pertenecia a la misma coleccion y ya.
  */
 public interface CollectionIF<E> {
-	//devuelve el num de elementos de la coleccion
+	//devuelve el num de elementos de la coleccion 
 	public int size(); 
 	
 	/*
