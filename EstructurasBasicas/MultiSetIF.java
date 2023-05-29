@@ -48,4 +48,17 @@ public interface MultiSetIF<E> extends ContainerIF<E> {
 
 	//realiza la interssecion del multiconjunto llamante con el parametro
 	public void interseccion (MultiSetIF s);
+
+	/*
+	 * Realiza la diferencia del multiconjunto llamante con el parametro
+	 * (los elementos que estan en el llamante pero no en el parametro)
+	 */
+	public void difference(MultiSetIF<E> s);
+
+	/*
+	 * Devuelve cierto si, si el parametro es un submulticonjunto
+	 * del llamante
+	 */
+	 public boolean isSubMultiSet(MultiSetIF<E> s);
+
 }
