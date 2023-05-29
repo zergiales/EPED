@@ -47,7 +47,7 @@ public interface MultiSetIF<E> extends ContainerIF<E> {
 	public void union(MultiSetIF<E> s);
 
 	//realiza la interssecion del multiconjunto llamante con el parametro
-	public void interseccion (MultiSetIF s);
+	public void interseccion (MultiSetIF<E> s);
 
 	/*
 	 * Realiza la diferencia del multiconjunto llamante con el parametro
