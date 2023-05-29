@@ -2,26 +2,28 @@ package EstructurasBasicas;
 
 /*
  * representa un conjunto => contenedor que permite almacenar
- * elementos qe serán únicos dentro del conjunto
+ * elementos que serÃ¡n Ãºnicos dentro del conjunto
  * 
- * RECORDAR: el conjunto representa elconjunt matemático de
- * conjunto finito , en los cuales cada elemento esta una ÚNICA
+ * RECORDAR: el conjunto representa elconjunt matemÃ¡tico de
+ * conjunto finito , en los cuales cada elemento esta una ÃšNICA
  * VEZ!!
  */
 public interface SetIF<E> extends ContainerIF<E> {
-	//realiza la unión del conjunto que llama con el paramatero
+	
+	//realiza la uniÃ³n del conjunto que llama con el paramatero E
 	public void union(SetIF<E> s);
 	
 	//Realiza la interseccion del conjunto que llama con el parametro 
+	//modifia el confunto diamante
 	 public void interssecion(SetIF<E> s);
 	
 	 /*
 	 * Realiza la diferencia del conjunto que llama con el
-	 * parametro (los elementos que están en el llamante pero
-	 * no en el parámetro) 
+	 * parametro (los elementos que estÃ¡n en el llamante pero
+	 * no en el parÃ¡metro) 
 	 */
 	 public void difference(SetIF<E> s);
 	 
-	 // Devuelve verdadero si el conjunto parametro es subconjunto
+	 // Devuelve verdadero si el conjunto parametro es subconjunto del conjunto diamante
 	 public boolean isSubset(SetIF<E> s);
 }

@@ -3,8 +3,8 @@ package EstructurasBasicas;
 public interface ListIF<E> extends SequenceIF<E> {
 	
 	/**
-	 * Devuelve el elemento de la lista que ocupa la posición
-	 * indicada por el parámetro
+	 * Devuelve el elemento de la lista que ocupa la posiciï¿½n
+	 * indicada por el parÃ¡metro
 	 * 
 	 * @param pos la posicion ha comenzado en 1
 	 * @pre: 1 <= pos <= size()
@@ -13,7 +13,7 @@ public interface ListIF<E> extends SequenceIF<E> {
 	public E get (int pos);
 	
 	/**
-	 *Modifica la posicion dad por el parámetro pos para que contenga
+	 *Modifica la posicion dad por el parï¿½metro pos para que contenga
 	 *el valor dado por el parametro e.
 	 *
 	 * @param pos la posicion cuyo valor se debe modificar, comenzando en 1
@@ -23,8 +23,8 @@ public interface ListIF<E> extends SequenceIF<E> {
 	
 	/**
 	 * Inserta un elemento en la Lista
-	 * @param elem El elemento que hay que añadir
-	 * @param pos La posicion en la que se debe añadir elem, comenzando en 1.
+	 * @param elem El elemento que hay que aï¿½adir
+	 * @param pos La posicion en la que se debe aï¿½adir elem, comenzando en 1.
 	 * @pre: 1<= pos <=size()+1
 	 */
 	public void insert (E element, int pos);
