@@ -4,9 +4,9 @@ package EstructurasBasicas;
  * 
  * Representa una pila de elementos
  * --> una pila es una especializacion de una secuencia, que mantiene el orden
- * de almacenamiento de sus elementos y una polÔøΩtica de acceso
+ * de almacenamiento de sus elementos y una polÌtica de acceso
  * LIFO
- * 	Lat In Fist Out
+ * 	Last In Fist Out  (el ultimo que entra es el primeor que sale)
  * @param <E>
  */
 public interface StackIF<E> extends SequenceIF<E> {
@@ -31,9 +31,9 @@ public interface StackIF<E> extends SequenceIF<E> {
 	public void pop();
 	
 	/**
-	 * USO T√çPICOS DE LAS PILAS
+	 * USO TÕPICOS DE LAS PILAS
 	 * 
-	 * - Cuando los lenguajes de prog estan llamando a m√©todos o funciones, todas
+	 * - Cuando los lenguajes de prog estan llamando a mÈtodos o funciones, todas
 	 * 	las llamadas se van organizando en forma de pila, por lo que se devuelve el control a la que hab√≠a antes
 	 * 
 	 * cuando la ultima llamada se termina se borra

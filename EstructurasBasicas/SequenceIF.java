@@ -1,5 +1,5 @@
 package EstructurasBasicas;
-//Ejemplo de secuencia [ coleccion de elemntos que se organizan linealmente]
+//Ejemplo de secuencia [ coleccion de elementos que se organizan linealmente]
 public interface SequenceIF<E> extends CollectionIF<E> {
 	/*
 	 * - Devuelve el iterador sobre la secuencia
