@@ -1,7 +1,9 @@
-﻿# Anotaciones
->Cada carpeta contiene los ejemplos de cada tema que se ha dado
-- A continuación pondré unos links para que puedas acceder a los apuntes de wuolah y te los descargues
-___
-<!--URLS Y TEMAS-->
-## Tema 1: [Estructuras básicas](https://wuolah.com/etsii-gii-88372/estrategias-de-programacion-y-estructuras-de-datos/7634227 "tema 1")
-## Tema 2: [Recursividad](https://wuolah.com/etsii-gii-88372/estrategias-de-programacion-y-estructuras-de-datos/7634227 "tema2")
+﻿
+# Estrategias de Programación y Estrucuturas de Datos
+
+> En cada fichero de lo que dejamos más abajo, puedess encontrar apuntes teoricos/practicos que nos pueden ser utilies para aplicar codig de una mejor forma a nuestro codigo.
+
+1. [Tema 1 :open_file_folder:](EstructurasBasicas/ "Estructuras básicas de datos")
+2. [Tema 2 :open_file_folder:](Recursividad/)
+3. [Tema 3 :open_file_folder:]()
+
