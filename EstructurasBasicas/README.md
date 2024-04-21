@@ -56,9 +56,9 @@ public class PilaArray <E> implements Pila <E>{
 ```
 ## Definición axiomática (TAD)
 
-**TAD** pila [elemento]
+**TAD** _pila [elemento]_
 
-### OPERACIONES
+**Operaciones:**
 
 + crear: --> pila
 + esta_vacia: pila --> booleano
