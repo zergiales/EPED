@@ -44,7 +44,34 @@ public class PilaArray <E> implements Pila <E>{
     void apilar(E elem){
         if(tam == vec.length){
             Oject[] tmp = new Object[2*tam];
-        }       
+            System.arraycopy(vec,0,tmp,0,tam-1);
+            vec = (E[]) tmp;
+        }
+        vec [tam ++] = elem;       
+    }
+    void desapilar(){
+        return vec[--tam];
     }
 }
 ```
+## Definición axiomática (TAD)
+
+**TAD** pila [elemento]
+
+### OPERACIONES
+
++ crear: --> pila
++ esta_vacia: pila --> booleano
++ cima: pila --> elemento
++ apilar: pila, elemento --> pila
++ desapilar: pila --> pila
+
+**PRECONDICONES**
++ cima(p) <-> 'NO esta_vacia(p)'
++ desapilar(p) <-> 'NO esta_vacia(p)'
+
+**ECUACIONES**
++ esta_vacia(crear) == T
++ esta_vacia (apilar(p,x)) == F
++ cima(apilar(p,x)) == x
++ desapilar (apilar(p,x)) == p
