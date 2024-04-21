@@ -75,3 +75,33 @@ public class PilaArray <E> implements Pila <E>{
 + esta_vacia (apilar(p,x)) == F
 + cima(apilar(p,x)) == x
 + desapilar (apilar(p,x)) == p
+
+---
+
+# Iteradores
+>
+>Son un caso especial de Interfaces, que nos permiten **recorrer** el TAD. Son sencillos e usar y eficientes, pero en algunos casos (TAD-árboles) son difíciles de implementar. Que operaciones necesitan:
+
+¿Hay más elementos por recorrer?
+Dame el siguiente elemento
+Vuelve a situarte al principio
+
+```java
+//Representa un terador de elementos
+public interface Iterator<E> {
+    
+    // Obtiene el siguiente elemento de la iteración.
+    // @Pre: hasNect()
+    // @return: el siguiente elemento de la iteración
+    public E getNext();
+    
+    //Comprueba si aún quedan elementos por iterar.
+    //@return true si el itrador dispone de más elementos.
+    public boolean hasNext();
+
+    //Vuelve la posición del iterador al principio.
+    // --> Esto permite reutilizar un iterador sin crear otro nuevo
+    public void reset();
+}
+```
+
