@@ -66,11 +66,11 @@ public class PilaArray <E> implements Pila <E>{
 + apilar: pila, elemento --> pila
 + desapilar: pila --> pila
 
-**PRECONDICONES**
+**Precondiciones:**
 + cima(p) <-> 'NO esta_vacia(p)'
 + desapilar(p) <-> 'NO esta_vacia(p)'
 
-**ECUACIONES**
+**Ecuaciones:**
 + esta_vacia(crear) == T
 + esta_vacia (apilar(p,x)) == F
 + cima(apilar(p,x)) == x
