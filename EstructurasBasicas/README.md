@@ -67,7 +67,7 @@ public class PilaArray <E> implements Pila <E>{
 + desapilar: pila --> pila
 
 **Precondiciones:**
-+ cima(p) <-> 'NO esta_vacia(p)'
++ cima(p) <-> ´NO esta_vacia(p)´
 + desapilar(p) <-> 'NO esta_vacia(p)'
 
 **Ecuaciones:**
