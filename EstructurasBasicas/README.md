@@ -117,7 +117,7 @@ public interface Iterator<E> {
 >La implementación de una parte fundamental de un TAD, ya que permite su utilización en programas reales.
 ---
 # Estructuras de datos básicas
-<img src="../Assets/I b/EsquemaEb.png" width="400" height="350">
+<img src="../Assets/I b/EsquemaEb.png" width="100%" height="70%">
 
 ## Colecciones
 + Conjunto de elementos que no tiene restricciones adicionales.
