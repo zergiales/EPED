@@ -121,7 +121,8 @@ public interface Iterator<E> {
 
 ## Colecciones
 + Conjunto de elementos que no tiene restricciones adicionales.
-    +Solo importa si un elemento está o no en dicho conjunto.
+  + Solo importa si un elemento está o no en dicho conjunto.
+
 >[!Note]
 > :eyes: Todos los demás TADS van a extender de colección
  ### Operaciones
