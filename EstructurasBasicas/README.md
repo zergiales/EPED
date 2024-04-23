@@ -8,7 +8,7 @@ Un **registro o array**  permiten el acceso a sus datos individuales mediante op
 # Tipo Abstracto de Datos
 **TAD - Tipo Abstracto de Datos.** Un tipo Abstracto de Datos es un conjunto de valores y de operaciones definidos mediante una especificación independiente (interface) de cualquier representación. El objetivo, por  tanto de un TAD es seperar la interface (definición de las operaciones) de la implementación de las operacion (representación de datos más los algoritmos de las operaciones)
 **TAD = valores + operaciones**
-<img src="../Assets/I b/EsquemaTad.png" width="400" height="400">
+<img src="../Assets/I b/EsquemaTad.png" width="300" height="300">
 
 # Interface
 >
@@ -104,3 +104,30 @@ public interface Iterator<E> {
 }
 ```
 
+>[!NOTE]
+>Para cada uno de los <U>**TAD que se van a estudiar en el curso**</u> se dará una interfae que seguiremos obligatoriamente para el uso de dicho TAD.
+---
+>[!IMPORTANT]
+>Estas interfaces representa una especia de contrato, es decirm cualquier programa que implemente el TAD al que representa deberá implementar todas sus operaciones (métodos).
+---
+>[!NOTE]
+>Dichos programas podrán incoporar nuevos métodos públicos a su interfaz siempreque éstos se definan e implementen. **PRÁCTICA DE LA ASIGNATURA**.
+---
+>[!TIP]
+>La implementación de una parte fundamental de un TAD, ya que permite su utilización en programas reales.
+---
+# Estructuras de datos básicas
+<img src="../Assets/I b/EsquemaEb.png" width="350" height="350">
+
+## Colecciones
++ Conjunto de elementos que no tiene restricciones adicionales.
+    +Solo importa si un elemento está o no en dicho conjunto.
+>[!Note]
+> :eyes: Todos los demás TADS van a extender de colección
+ ### Operaciones
+Ver si la colección está vacía.
+ ### Interface de Coleccion
+ 
+ ```java
+public interface Collection<E> {}
+```
