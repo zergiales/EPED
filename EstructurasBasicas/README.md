@@ -1,11 +1,13 @@
 
 # Estructuras de datos Básicas
+>
 >Los programas manejan información mediante el uso de estructuras (variables, vectores, matrices, árboles...). Éstas pueden manipularse, crearse o eliminarse.
 >[!IMPORTANT]
 >**Una estructura de Datos** permite establecer una forma particular de almacenar y organizar información.
 Un **registro o array**  permiten el acceso a sus datos individuales mediante operaciones aritméticas sobre su dirección conocido el tamaño de cada uno de sus datos.
 
 # Tipo Abstracto de Datos
+
 **TAD - Tipo Abstracto de Datos.** Un tipo Abstracto de Datos es un conjunto de valores y de operaciones definidos mediante una especificación independiente (interface) de cualquier representación. El objetivo, por  tanto de un TAD es seperar la interface (definición de las operaciones) de la implementación de las operacion (representación de datos más los algoritmos de las operaciones)
 **TAD = valores + operaciones**
 <img src="../Assets/I b/EsquemaTad.png" width="300" height="300">
@@ -23,7 +25,9 @@ public interface Pila <E>{
     void desapilar();
 }
 ```
+
 Podemos implementar esta interfaz en la siguiente estructura de datos
+
 ```java
 public class PilaArray <E> implements Pila <E>{
     private E[] vec;
@@ -53,6 +57,7 @@ public class PilaArray <E> implements Pila <E>{
     }
 }
 ```
+
 ## Definición axiomática (TAD)
 
 **TAD** _pila [elemento]_
@@ -66,10 +71,12 @@ public class PilaArray <E> implements Pila <E>{
 + desapilar: pila --> pila
 
 **Precondiciones:**
+
 + cima(p) <-> `NO esta_vacia(p)`
 + desapilar(p) <-> `'NO esta_vacia(p)`
 
 **Ecuaciones**
+
 + esta_vacia(crear) == T
 + esta_vacia (apilar(p,x)) == F
 + cima(apilar(p,x)) == x
@@ -116,19 +123,27 @@ public interface Iterator<E> {
 >[!TIP]
 >La implementación de una parte fundamental de un TAD, ya que permite su utilización en programas reales.
 ---
+
 # Estructuras de datos básicas
+
 <img src="../Assets/I b/EsquemaEb.png" width="100%" height="70%">
 
 ## Colecciones
+
 + Conjunto de elementos que no tiene restricciones adicionales.
   + Solo importa si un elemento está o no en dicho conjunto.
 
 >[!Note]
-> :eyes: Todos los demás TADS van a extender de colección
- ### Operaciones
-Ver si la colección está vacía.
- ### Interface de Coleccion
- 
+> :eyes: Todos los demás TADS van a extender de colección. La colección de los elementos puede ser mediante estructuras _lineales_ o estructuras _jerárquicas_.
+
+### Operaciones
+
++ Consultar cual es el tamaño de la colección.
++ Vaciar la colección, consultar si esta vacía o no.
++ Comprobar si un elemento pertenece o no a la colección.
+
+### Interface de Coleccion
+
  ```java
 public interface Collection<E> {}
 ```
