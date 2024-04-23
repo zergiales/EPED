@@ -8,9 +8,8 @@ Un **registro o array**  permiten el acceso a sus datos individuales mediante op
 # Tipo Abstracto de Datos
 **TAD - Tipo Abstracto de Datos.** Un tipo Abstracto de Datos es un conjunto de valores y de operaciones definidos mediante una especificación independiente (interface) de cualquier representación. El objetivo, por  tanto de un TAD es seperar la interface (definición de las operaciones) de la implementación de las operacion (representación de datos más los algoritmos de las operaciones)
 **TAD = valores + operaciones**
-/*
-falta poner una imagen aqui de 
- */
+<img src="../Assets/I b/EsquemaTad.png" width="400" height="400">
+
 # Interface
 >
 >Ejemplo de intez en java
