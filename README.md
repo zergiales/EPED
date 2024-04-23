@@ -5,5 +5,6 @@
 
 1. [Estructuras de datos básicas :open_file_folder:](EstructurasBasicas/ "Tema 1")
 2. [Recursividad :open_file_folder:](Recursividad/ "Tema 2")
-3. [Estructuras de control :open_file_folder:]()
+3. [Análisis básico de algoritmos:open_file_folder:](AnalisisBasicoAlgoritmo/ "Tema 3")
+4. [Colecciones, Secuencias y Listas :open_file_folder:](Colecciones,Secuencias,Listas/ "Tema 4")
 
