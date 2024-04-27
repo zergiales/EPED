@@ -145,5 +145,62 @@ public interface Iterator<E> {
 ### Interface de Coleccion
 
  ```java
-public interface Collection<E> {}
+ /*
+ * Representa una colección de elementos, sin ningún tipo de relación entre 
+ *    ellos más que la pertenencia a la misma colección
+ */
+public interface CollectionIF<E> {
+    // Devuelve el número de elementos de la colección
+    public int size();
+    // Devuelve true si la coleccióm no contiene elementos
+    public boolean isEmpty();
+    // Devuelve true si es está en la colección
+    public boolean contains (E e);
+    // Elimina todos los elementos de la colección
+    public void clear();
+}
 ```
+## Contenedores
+
++ Es una colección de elementos sin orden entre sí.
+  + Importa si un elemento esta o no.
+
+### Operaciones
+
++ Añadir un elemento
++ Eliminar un elemento existente
++ Recorrer los elementos
+
+### Interface de Contenedor
+
+``` java
+/**
+ * Representa un contenedor, que es una clección de elementos que
+ * no guardan ningún orden entre sí.
+ */
+public interface ContainerIF<E> extendes CollectionIF<E> {
+    // Añade un elemento al contenedor
+    public void add(E e);
+    /**
+     * Elimina un elemento e del contenedor
+     * @pre: this.contains(e)
+     * @post: !this.contains(e)
+     */
+    public void remove (E e);
+
+    //Devuelve un iterador para el contenedor
+    public IteratorIF<E> iterator ();
+}
+```
+
+## Conjuntos
+
++ Representa el concepto matemático de conjunto finito.
++ Cada elemento está solo una vez.
+
+### Operaciones
+
++ Operaciones conjuntistas típicas: _unión, intersección, diferencia (Propias de la teoría de conjuntos)_.
++ Comprobar si un conjunto es subconjunto de otro conjunto.
+
+### Interface de un Conjunto
